@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
 
 @Component({
-  selector: 'page-contact',
+  selector   : 'page-contact',
   templateUrl: 'contact.html'
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController, private platform:Platform) {
+    this.platform.ready().then(() => {
+      
+    })
   }
 
 }
